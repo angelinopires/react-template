@@ -23,12 +23,12 @@ This workflow was created based on several tutorials and features on the interne
 1. Clone the Project
 2. Use ``cd react-workfloy``
 3. ``npm install or yarn install``
-4. ``npm start or yarn startgit``
+4. ``npm start or yarn start``
 
 ## Commands:
 
-npm start - `Runs a server on developer mode`
-npm run build - `Minify and prepare your project to deployment`
+* npm start - `Runs a server on developer mode`
+* npm run build - `Minify and prepare your project to deployment`
 
 
 ## Folder Struct:
