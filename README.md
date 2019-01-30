@@ -16,12 +16,12 @@ This workflow was created based on several tutorials and features on the interne
 
 - Node > v10.x;
 - NPM > v6.4;
-- Or you can use Yarn > v1.13;
+- or you can use Yarn > v1.13;
 
 ## Setup:
 
 1. Clone the Project
-2. Use ``cd react-workfloy``
+2. Use ``cd react-workflow``
 3. ``npm install or yarn install``
 4. ``npm start or yarn start``
 
