@@ -1,6 +1,10 @@
 # React workflow with Webpack 4
 
-This workflow was created based on several tutorials and features on internet. Enjoy!
+This workflow was created based on several tutorials and features on the internet. Enjoy!
+
+<div style="text-align: center">
+    <img src="https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif" width="500" height="350">
+</div>
 
 ## Stack:
 
@@ -17,21 +21,14 @@ This workflow was created based on several tutorials and features on internet. E
 ## Setup:
 
 1. Clone the Project
-2. Use ``cd workflow-react``
-3. npm install or yarn install
-4. npm start or yarn start
-
-Após clonar e se posicionar na pasta do projeto:
-
-* Utilize um dos dois:
-
-``npm install ou yarn install``
-``npm start ou yarn start``
+2. Use ``cd react-workfloy``
+3. ``npm install or yarn install``
+4. ``npm start or yarn startgit``
 
 ## Commands:
 
-``npm start - Runs a server on developer mode``
-`npm run build - Minify and prepare your project to deployment`
+npm start - `Runs a server on developer mode`
+npm run build - `Minify and prepare your project to deployment`
 
 
 ## Folder Struct:
@@ -63,9 +60,3 @@ Após clonar e se posicionar na pasta do projeto:
     ├── index.html
     └── main.js
 ```
-
-## Enjoy!
-
-<div style="text-align: center">
-    <img src="https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif" width="500" height="350">
-</div>
