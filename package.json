@@ -10,7 +10,6 @@
   "author": "Angelino Pires",
   "license": "ISC",
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1"
   },

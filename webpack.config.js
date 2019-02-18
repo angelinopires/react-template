@@ -8,7 +8,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
 module.exports = {
   entry: {
-    main: "./src/main.js"
+    main: "./src/main.js",
+    plugins: "./src/plugins.js"
   },
   output: {
     filename: '[name].bundle.js',
@@ -58,7 +59,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: {
           loader: 'file-loader',
           options: {
