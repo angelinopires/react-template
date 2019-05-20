@@ -8,8 +8,8 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
 
 module.exports = {
   entry: {
-    main: "./src/main.js",
-    plugins: "./src/plugins.js"
+    main: "./src/js/main.js",
+    plugins: "./src/js/plugins.js"
   },
   output: {
     filename: '[name].bundle.js',
