@@ -1,13 +1,13 @@
 {
-  "name": "workflow-react",
+  "name": "react-project-template",
   "version": "1.0.0",
-  "description": "A workflow of React.js",
+  "description": "An alternative template to work with React",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
-  "author": "Angelino Pires",
+  "author": "Angelino Oliveira",
   "license": "ISC",
   "dependencies": {
     "react": "^16.14.0",
