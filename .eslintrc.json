@@ -18,6 +18,18 @@
         "react"
     ],
     "rules": {
-      "semi": ["error", "never"]
+      "semi": ["error", "never"],
+      "react/function-component-definition": [2, {
+          "namedComponents": "arrow-function"
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx"],
+          "moduleDirectory": ["node_modules", "src"]
+        }
+      }
     }
 }
