@@ -1,12 +1,15 @@
 {
+  "homepage": "http://angelinopires.github.io/react-template",
   "name": "react-template",
   "version": "1.0.0",
   "description": "An alternative template to work with React",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server --mode development",
-    "lint": "eslint src/ --ext .js,.jsx"
+    "lint": "eslint src/ --ext .js,.jsx",
+    "predeploy": "npm run build"
   },
   "author": "Angelino Oliveira",
   "license": "ISC",
@@ -37,6 +40,7 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.16",
