@@ -2,7 +2,10 @@ import * as React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
-import App from './App'
+// CORE
+import { App, Routes } from './core/index'
+
+// STYLES
 import './shared/scss/main.scss'
 
 const root = ReactDOM.createRoot(
@@ -13,6 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <Routes />
     </BrowserRouter>
   </React.StrictMode>,
 )
