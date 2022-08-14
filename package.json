@@ -1,12 +1,12 @@
 {
-  "name": "react-project-template",
+  "name": "react-template",
   "version": "1.0.0",
   "description": "An alternative template to work with React",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development",
-    "lint": "npx eslint --max-warnings=0 --ext .js,.jsx src/"
+    "lint": "eslint src/ --ext .js,.jsx"
   },
   "author": "Angelino Oliveira",
   "license": "ISC",

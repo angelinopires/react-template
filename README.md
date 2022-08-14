@@ -1,18 +1,28 @@
-# React workflow
+# React template
 
-This workflow was created based on my personal experience. It's an alternative to `create-react-app`, therefore it's more flexible.
+This is a project template to boost your productivity and save time. It's an alternative to `create-react-app`, therefore it's more flexible.
+
+It already have an optimized build process, for those projects that will hit production eventually.
+
 ## 💻 Stack
 
 - React
 - SCSS
+- ESLint
 - Webpack 5
 
 ## 📋 Requirements
 - Node v14.17.3 or similar
 
+## 👉 Technical References
+
+- [Maintain Control: A Guide to Webpack and React, Pt. 1](https://www.toptal.com/react/webpack-react-tutorial-pt-1)
+- [Maintain Control: A Guide to Webpack and React, Pt. 2](https://www.toptal.com/react/webpack-config-tutorial-pt-2) 
+- My professional experience
+
 ## 👨‍💻 Setup
 
-1. Clone the Project
+1. Clone the project
 2. If you're using `nvm`, run these commands before proceeding
 ```bash
 $ nvm install 14.17.3
@@ -22,7 +32,7 @@ $ nvm use
 ```bash
 $ npm install
 ```
-OR
+or
 ```
 $ yarn
 ```
@@ -30,7 +40,7 @@ $ yarn
 ```bash
 $ npm run dev
 ```
-OR
+or
 ```
 $ yarn dev
 ```
