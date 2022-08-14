@@ -15,7 +15,6 @@ module.exports = function (_env, argv) {
       compress: true,
       historyApiFallback: true,
       hot: true,
-      open: true,
       port: 8080,
     },
     devtool: isDevelopment && 'cheap-module-source-map',
@@ -48,6 +47,9 @@ module.exports = function (_env, argv) {
             {
               loader: 'sass-loader',
               options: {
+                additionalData: `
+                  @import "src/shared/scss/variables.scss";
+                `,
                 sourceMap: true,
               },
             },
