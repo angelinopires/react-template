@@ -11,6 +11,7 @@ It already have an optimized build process, for those projects that will hit pro
 - ESLint
 - Stylelint
 - Webpack 5
+- IDE Plugins: [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint), [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 ## 📋 Requirements
 - Node v14.17.3 or similar
