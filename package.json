@@ -5,10 +5,12 @@
   "description": "An alternative template to work with React",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "npm run prebuild && webpack --mode production",
     "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server --mode development",
+    "lint:scss": "stylelint '**/*.scss'",
     "lint": "eslint src/ --ext .js,.jsx",
+    "prebuild": "npm run lint && npm run lint:scss",
     "predeploy": "npm run build"
   },
   "author": "Angelino Oliveira",
@@ -51,6 +53,8 @@
     "sass": "^1.54.4",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
+    "stylelint": "^14.10.0",
+    "stylelint-config-standard-scss": "^5.0.0",
     "terser-webpack-plugin": "^5.3.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.74.0",

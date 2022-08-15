@@ -69,7 +69,7 @@ module.exports = function (_env, argv) {
           ],
         },
         {
-          test: /\.(png|jpg|gif)$/i,
+          test: /\.(png|jpg|gif|ico)$/i,
           use: {
             loader: 'url-loader',
             options: {
@@ -136,14 +136,14 @@ module.exports = function (_env, argv) {
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'assets/js/[name].[contenthash:8].js',
+      filename: 'js/[name].[contenthash:8].js',
       publicPath: '/',
     },
     plugins: [
       isProduction
         && new MiniCssExtractPlugin({
-          filename: 'assets/css/[name].[contenthash:8].css',
-          chunkFilename: 'assets/css/[name].[contenthash:8].chunk.css',
+          filename: 'css/[name].[contenthash:8].css',
+          chunkFilename: 'css/[name].[contenthash:8].chunk.css',
         }),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'public/index.html'),
