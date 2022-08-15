@@ -9,6 +9,7 @@ It already have an optimized build process, for those projects that will hit pro
 - React
 - SCSS
 - ESLint
+- Stylelint
 - Webpack 5
 
 ## 📋 Requirements
