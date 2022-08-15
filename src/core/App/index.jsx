@@ -1,22 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// ASSETS
+import CaltonGif from '../../shared/assets/giphy.webp'
+
+// CORE
+import { Routes } from '../Routes/index'
+
 // STYLES
 import './index.scss'
 
 const App = () => (
   <div className="main">
-    <h1>Welcome to React Template 😎</h1>
+    <h1 className="title title--main">Welcome to React Template 😎</h1>
 
-    <h2>This is a routing demo</h2>
-    <ul>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-    </ul>
+    <div>
+      <h2 className="title title--sub">Routing demo</h2>
+
+      <ul className="navigation">
+        <li className="navigation__link">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="navigation__link">
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+      <Routes />
+    </div>
+
+    <div>
+      <h2 className="title title--sub">Assets demo</h2>
+
+      <img alt="Calton dancing" src={CaltonGif} />
+    </div>
   </div>
 )
 

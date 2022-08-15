@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => (
   <div>
-    This is HOME page
+    <h3 className="title title--aux">This is HOME page</h3>
   </div>
 )
 

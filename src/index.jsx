@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
 // CORE
-import { App, Routes } from './core/index'
+import { App } from './core/index'
 
 // STYLES
 import './shared/scss/main.scss'
@@ -16,7 +16,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      <Routes />
     </BrowserRouter>
   </React.StrictMode>,
 )

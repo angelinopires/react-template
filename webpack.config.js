@@ -69,7 +69,7 @@ module.exports = function (_env, argv) {
           ],
         },
         {
-          test: /\.(png|jpg|gif|ico)$/i,
+          test: /\.(png|jpg|gif|ico|webp)$/i,
           use: {
             loader: 'url-loader',
             options: {
@@ -135,9 +135,8 @@ module.exports = function (_env, argv) {
       runtimeChunk: 'single',
     },
     output: {
-      path: path.resolve(__dirname, 'dist'),
       filename: 'js/[name].[contenthash:8].js',
-      publicPath: '/',
+      path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       isProduction
