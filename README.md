@@ -20,6 +20,7 @@ It already have an optimized build process, for those projects that will hit pro
 
 - [Maintain Control: A Guide to Webpack and React, Pt. 1](https://www.toptal.com/react/webpack-react-tutorial-pt-1)
 - [Maintain Control: A Guide to Webpack and React, Pt. 2](https://www.toptal.com/react/webpack-config-tutorial-pt-2) 
+- [Webpack 5: Asset Modules](https://webpack.js.org/guides/asset-modules/)
 - My professional experience
 
 ## 👨‍💻 Setup

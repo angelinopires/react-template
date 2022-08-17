@@ -69,25 +69,8 @@ module.exports = function (_env, argv) {
           ],
         },
         {
-          test: /\.(png|jpg|gif|ico|webp)$/i,
-          use: {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-              name: 'static/media/[name].[hash:8].[ext]',
-            },
-          },
-        },
-        {
-          test: /\.svg$/,
-          use: ['@svgr/webpack'],
-        },
-        {
-          test: /\.(eot|otf|ttf|woff|woff2)$/,
-          loader: require.resolve('file-loader'),
-          options: {
-            name: 'static/media/[name].[hash:8].[ext]',
-          },
+          test: /\.(png|jpg|gif|svg|ico|webp)$/i,
+          type: 'asset',
         },
       ],
     },
@@ -155,7 +138,7 @@ module.exports = function (_env, argv) {
       }),
     ].filter(Boolean),
     resolve: {
-      extensions: ['.js', '.jsx'],
+      extensions: ['.js', '.jsx', '.json'],
     },
     watchOptions: {
       ignored: ['dist', 'node_modules'],
