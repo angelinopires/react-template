@@ -1,6 +1,6 @@
-import * as React from 'react'
-import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
+import { StrictMode } from 'react'
+import ReactDOM from 'react-dom/client'
 
 // CORE
 import { App } from './core/index'
@@ -8,14 +8,12 @@ import { App } from './core/index'
 // STYLES
 import './shared/scss/main.scss'
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root'),
-)
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </StrictMode>
 )

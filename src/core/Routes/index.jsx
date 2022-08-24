@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { Route, Routes as ReactRouter } from 'react-router-dom'
 
 // PAGES

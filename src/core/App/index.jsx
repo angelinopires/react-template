@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 // ASSETS
@@ -39,22 +38,30 @@ const App = () => (
 
         <div className="assets">
           <div className="assets__item">
-            <p><strong>.png</strong></p>
+            <p>
+              <strong>.png</strong>
+            </p>
             <img alt="Github logo" src={githubPng} />
           </div>
 
           <div className="assets__item">
-            <p><strong>.ico</strong></p>
+            <p>
+              <strong>.ico</strong>
+            </p>
             <img alt="Github logo" src={favicon} />
           </div>
 
           <div className="assets__item">
-            <p><strong>.webp</strong></p>
+            <p>
+              <strong>.webp</strong>
+            </p>
             <img alt="Github logo" src={githubWebp} />
           </div>
 
           <div className="assets__item">
-            <p><strong>.svg</strong></p>
+            <p>
+              <strong>.svg</strong>
+            </p>
             <img alt="Github logo" src={githubSvg} />
           </div>
         </div>
@@ -65,22 +72,30 @@ const App = () => (
 
         <div className="assets">
           <div className="assets__item assets__item--png">
-            <p><strong>.png</strong></p>
+            <p>
+              <strong>.png</strong>
+            </p>
             <span />
           </div>
 
           <div className="assets__item assets__item--ico">
-            <p><strong>.ico</strong></p>
+            <p>
+              <strong>.ico</strong>
+            </p>
             <span />
           </div>
 
           <div className="assets__item assets__item--webp">
-            <p><strong>.webp</strong></p>
+            <p>
+              <strong>.webp</strong>
+            </p>
             <span />
           </div>
 
           <div className="assets__item assets__item--svg">
-            <p><strong>.svg</strong></p>
+            <p>
+              <strong>.svg</strong>
+            </p>
             <span />
           </div>
         </div>
