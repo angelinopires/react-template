@@ -21,8 +21,9 @@ It already have an optimized build process, for those projects that will hit pro
 
 - [Maintain Control: A Guide to Webpack and React, Pt. 1](https://www.toptal.com/react/webpack-react-tutorial-pt-1)
 - [Maintain Control: A Guide to Webpack and React, Pt. 2](https://www.toptal.com/react/webpack-config-tutorial-pt-2)
-- [Webpack 5: Asset Modules](https://webpack.js.org/guides/asset-modules/)
 - [Introducing the New JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#removing-unused-react-imports)
+- [Webpack 5: Asset Modules](https://webpack.js.org/guides/asset-modules/)
+- [Webpack: Code Splitting](https://webpack.js.org/guides/code-splitting/)
 - [Como configurar o Prettier e ESLint em projetos React](https://felipecesar.dev/posts/como-configurar-o-prettier-e-eslint-em-projetos-react/)
 - My professional experience
 
@@ -49,6 +50,11 @@ $ npm run dev
 ```
 
 5. Open `http://localhost:8080/` on your favorite browser
+
+## ⏭️ Next steps
+
+- Create a `TypeScript` variation
+- Create a `Next.js` variation
 
 ### Enjoy!
 
