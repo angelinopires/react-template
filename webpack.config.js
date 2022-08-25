@@ -49,6 +49,7 @@ module.exports = function (_env, argv) {
               options: {
                 additionalData: `
                   @import "src/shared/scss/variables.scss";
+                  @import "src/shared/scss/mixins.scss";
                 `,
                 sourceMap: true,
               },
@@ -104,9 +105,12 @@ module.exports = function (_env, argv) {
             test: /[\\/]node_modules[\\/]/,
             name(module, chunks, cacheGroupKey) {
               const packageName = module.context.match(
-                /[\\/]node_modules[\\/](.*?)([\\/]|$)/,
-              )[1]
-              return `${cacheGroupKey}.${packageName.replace('@', '')}`
+                /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+              )
+
+              if (!packageName) return ''
+
+              return `${cacheGroupKey}.${packageName[1].replace('@', '')}`
             },
           },
           common: {
@@ -122,8 +126,8 @@ module.exports = function (_env, argv) {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      isProduction
-        && new MiniCssExtractPlugin({
+      isProduction &&
+        new MiniCssExtractPlugin({
           filename: 'css/[name].[contenthash:8].css',
           chunkFilename: 'css/[name].[contenthash:8].chunk.css',
         }),
@@ -133,7 +137,7 @@ module.exports = function (_env, argv) {
       }),
       new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify(
-          isProduction ? 'production' : 'development',
+          isProduction ? 'production' : 'development'
         ),
       }),
     ].filter(Boolean),
