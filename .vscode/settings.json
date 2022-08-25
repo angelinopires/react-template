@@ -1,0 +1,25 @@
+{
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "npm",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "typescript",
+    "typescriptreact"
+  ],
+  "less.validate": false,
+  "prettier.requireConfig": true,
+  "scss.validate": false,
+  "stylelint.autoFixOnSave": true,
+  "stylelint.config": {},
+  "stylelint.validate": ["css", "scss"],
+}
+
