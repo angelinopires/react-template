@@ -4887,6 +4887,11 @@
     "cssesc" "^3.0.0"
     "util-deprecate" "^1.0.2"
 
+"postcss-sorting@^7.0.1":
+  "integrity" "sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g=="
+  "resolved" "https://registry.npmjs.org/postcss-sorting/-/postcss-sorting-7.0.1.tgz"
+  "version" "7.0.1"
+
 "postcss-svgo@^5.1.0":
   "integrity" "sha512-D75KsH1zm5ZrHyxPakAxJWtkyXew5qwS70v56exwvw542d9CRtTo78K0WeFxZB4G7JXKKMbEZtZayTGdIky/eA=="
   "resolved" "https://registry.npmjs.org/postcss-svgo/-/postcss-svgo-5.1.0.tgz"
@@ -4907,7 +4912,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^7.0.0 || ^8.0.1", "postcss@^8", "postcss@^8.0.0", "postcss@^8.0.3", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2", "postcss@^8.2.14", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.3", "postcss@^8.3.3", "postcss@^8.4", "postcss@^8.4.13", "postcss@^8.4.16", "postcss@^8.4.6", "postcss@^8.4.7":
+"postcss@^7.0.0 || ^8.0.1", "postcss@^8", "postcss@^8.0.0", "postcss@^8.0.3", "postcss@^8.0.9", "postcss@^8.1.0", "postcss@^8.2", "postcss@^8.2.14", "postcss@^8.2.15", "postcss@^8.2.2", "postcss@^8.3", "postcss@^8.3.3", "postcss@^8.3.9", "postcss@^8.4", "postcss@^8.4.13", "postcss@^8.4.16", "postcss@^8.4.6", "postcss@^8.4.7":
   "integrity" "sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.16.tgz"
   "version" "8.4.16"
@@ -5750,7 +5755,7 @@
     "postcss-selector-parser" "^6.0.6"
     "postcss-value-parser" "^4.1.0"
 
-"stylelint@^14.10.0", "stylelint@^14.4.0", "stylelint@^14.5.1", "stylelint@^14.8.0", "stylelint@^14.9.0", "stylelint@>=11.0.0":
+"stylelint@^14.11.0", "stylelint@^14.4.0", "stylelint@^14.5.1", "stylelint@^14.8.0", "stylelint@^14.9.0", "stylelint@>=11.0.0":
   "integrity" "sha512-OTLjLPxpvGtojEfpESWM8Ir64Z01E89xsisaBMUP/ngOx1+4VG2DPRcUyCCiin9Rd3kPXPsh/uwHd9eqnvhsYA=="
   "resolved" "https://registry.npmjs.org/stylelint/-/stylelint-14.11.0.tgz"
   "version" "14.11.0"
