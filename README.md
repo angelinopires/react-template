@@ -40,16 +40,16 @@ $ nvm use
 3. Then, install the packages. NPM and Yarn are available, choose your preference.
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 4. After finished, run in development mode
 
 ```bash
-$ npm run dev
+$ yarn dev
 ```
 
-5. Open `http://localhost:8080/` on your favorite browser
+5. Open `http://localhost:3000/` on your favorite browser
 
 ## ⏭️ Next steps
 

@@ -15,7 +15,7 @@ module.exports = function (_env, argv) {
       compress: true,
       historyApiFallback: true,
       hot: true,
-      port: 8080,
+      port: 3000,
     },
     devtool: isDevelopment && 'cheap-module-source-map',
     entry: './src/index.jsx',
