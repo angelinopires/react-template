@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 // ASSETS
 import favicon from '../../../public/favicon.ico'
 import githubPng from '../../../public/github.png'
+import sorocabaCSS from '../../../public/sorocabacss.jpg'
 import githubSvg from '../../../public/github.svg'
 import githubWebp from '../../../public/github.webp'
 
@@ -42,6 +43,13 @@ const App = () => (
               <strong>.png</strong>
             </p>
             <img alt="Github logo" src={githubPng} />
+          </div>
+
+          <div className="assets__item">
+            <p>
+              <strong>.jpg</strong>
+            </p>
+            <img alt="SorocabaCSS 9" src={sorocabaCSS} />
           </div>
 
           <div className="assets__item">

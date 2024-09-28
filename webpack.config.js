@@ -1,5 +1,6 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
@@ -70,7 +71,7 @@ module.exports = function (_env, argv) {
           ],
         },
         {
-          test: /\.(png|jpg|gif|svg|ico|webp)$/i,
+          test: /\.(png|jpe?g|gif|svg|ico|webp)$/i,
           type: 'asset',
         },
       ],
@@ -94,6 +95,33 @@ module.exports = function (_env, argv) {
           },
         }),
         new CssMinimizerPlugin(),
+        new ImageMinimizerPlugin({
+          minimizer: {
+            implementation: ImageMinimizerPlugin.sharpMinify,
+            options: {
+              encodeOptions: {
+                jpeg: {
+                  // https://sharp.pixelplumbing.com/api-output#jpeg
+                  quality: 50,
+                },
+                webp: {
+                  // https://sharp.pixelplumbing.com/api-output#webp
+                  lossless: true,
+                },
+                avif: {
+                  // https://sharp.pixelplumbing.com/api-output#avif
+                  lossless: true,
+                },
+                // png by default sets the quality to 100%, which is same as lossless
+                // https://sharp.pixelplumbing.com/api-output#png
+                png: {},
+                // gif does not support lossless compression at all
+                // https://sharp.pixelplumbing.com/api-output#gif
+                gif: {},
+              },
+            },
+          },
+        }),
       ],
       splitChunks: {
         chunks: 'all',
